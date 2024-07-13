@@ -6,6 +6,7 @@ import styles from "../styles/homepage.module.css";
 import ProductCard from "../components/ProductCard";
 import { FaVolumeMute } from "react-icons/fa";
 import { GoUnmute } from "react-icons/go";
+import { FaWhatsapp } from "react-icons/fa";
 import About from "../components/About";
 import SmallDiv from "../components/SmallDiv";
 
@@ -71,7 +72,9 @@ const HomePage = () => {
     >
       <Crousel images={images} />
       <Box h={"fit-content"} mt={{ base: "10px", md: "30px" }} width={"100%"}>
-        <Text color={'black'} fontSize={{ base: "40px", md: "60px" }}>OUR VARIANTS</Text>
+        <Text color={"black"} fontSize={{ base: "40px", md: "60px" }}>
+          OUR VARIANTS
+        </Text>
         <Box className={styles.productCont}>
           {masalapic.length &&
             masalapic.map((e) => {
@@ -119,7 +122,7 @@ const HomePage = () => {
       <Box className={styles.smallDetails}>
         <SmallDiv />
       </Box>
-       <Box
+      <Box
         position="fixed"
         bottom="20px"
         right="20px"
