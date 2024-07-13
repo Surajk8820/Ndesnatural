@@ -119,6 +119,24 @@ const HomePage = () => {
       <Box className={styles.smallDetails}>
         <SmallDiv />
       </Box>
+       <Box
+        position="fixed"
+        bottom="20px"
+        right="20px"
+        bg="green.500"
+        color="white"
+        p={3}
+        borderRadius="full"
+        boxShadow="lg"
+        zIndex="tooltip"
+        _hover={{ bg: "green.600" }}
+        as="a"
+        href="https://wa.me/917061771580"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FaWhatsapp size="30px" />
+      </Box>
     </Box>
   );
 };
